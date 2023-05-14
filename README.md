@@ -1,7 +1,8 @@
 # Stack-Trace
 
 ## What is Stace Trace?
-* Also called a backtrace, consists of a collection of stack records, which store an application's movement during its execution. The stack trace includes information about program subroutines and can be used to debug or troubleshoot and is often used to create log files.
+* Also called a BACKTRACE or STACK TRACE, consists of a collection of stack records, which store an application's movement during its execution. 
+* The stack trace includes information about program subroutines and can be used to debug or troubleshoot and is often used to create log files.
 * Generates when your app crashes because of an error or an exception.
 
 ## Helpful Tips and Best Practices
