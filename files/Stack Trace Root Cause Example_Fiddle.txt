@@ -1,0 +1,58 @@
+
+// Example Showing Stack Trace Root Cause
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		StackTraceTest();
+	}
+	
+	public static void StackTraceTest()
+	{
+		try
+		{
+			var x = 2;
+			var y = 2;	
+			ActionMethod(x, y);
+		}
+		catch (Exception ex)
+		{
+			throw;
+		}
+	}
+	
+	static void ActionMethod(int x, int y)
+	{
+		try
+		{
+			DeepActionMethod(x, y);
+			// DeepActionMethod(5, y);
+			
+		}
+		catch (Exception ex)
+		{
+			throw;
+		}
+	}
+	
+	static bool DeepActionMethod(int x, int y)
+	{
+		var z = 4;
+		if (x + y != z)
+		{
+			Console.WriteLine(x+y);
+			Console.WriteLine(z);
+			throw new Exception("Uh Oh Mike, What did you do!");
+		}
+		Console.WriteLine("It's Worked!");
+		Console.WriteLine(x+y);
+		Console.WriteLine(z);
+		return true;
+		
+		// Console.WriteLine(t);
+	}
+}
+
