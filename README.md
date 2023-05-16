@@ -6,19 +6,25 @@
 * Generates when your application crashes because of an error or an exception.
 * Often used to create log files.
 
-## Helpful Tips and Best Practices
+## Helpful Tips, Best Practices, & Knowledge 
+* Read stacks as Most Recent to Oldest
+  * The deepest exception happens in yourfunction/method calls and then a chain of exceptions is generated/thrown until the surface exception, which is the last one that happened in time. But when reading the stack we see it in the first place.
+* Fun Analogy: Stack of Blocks
+  * Think of Stack Trace as if you are building a tower out of blocks.
+* Main goal is to locate the Root Cause of your exception.   
+* 
 * You can obtain a stack trace from System.Diagnostics if you want to see the stack without an exception. 
    * System.Diagnostics.StackTrace(true);
-   * 
+   * ![](images/System.Diagnostics.StackTrace.PNG)
+
+
 * Technically, once a block of memory has been allocated on the stack, it cannot be easily removed as there can be other blocks of memory that were allocated before it. Each time a function is called in a program, a block of memory called an activation record is allocated on top of the call stack. Generally, the activation record stores the function's arguments and local variables
-* chain of exceptions
-   * applications will catch an Exception and re-throw it as the cause of another Exception.
+* 
    * What's different about this one is the "Caused by". Sometimes exceptions will have multiple "Caused by" sections. For these, you typically want to find the "root cause", which will be one of the lowest "Caused by" sections in the stack trace.
-* Locate the root cause
+   * 
 * a list of Exceptions( or you can say a list of "Cause by")
-   * Just like the reason we call it 'stack' is because stack is First in Last out (FILO), the deepest exception was happened in the very beginning, then a chain of exception was generated a series of consequences, the surface Exception was the last one happened in time, but we see it in the first place.
+   *
 * A tricky and important thing here need to be understand is : the deepest cause may not be the "root cause", because if you write some "bad code", it may cause some exception underneath which is deeper than its layer. For example, a bad sql query may cause SQLServerException connection reset in the bottem instead of syndax error, which may just in the middle of the stack.
-*  Another tricky but important thing is inside each "Cause by" block, the first line was the deepest layer and happen first place for this block. 
 
 
 ## Stace Trace Small Demo & Examples
