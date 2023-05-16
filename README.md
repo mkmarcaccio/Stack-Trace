@@ -23,12 +23,13 @@
 
 * Each time a function is called in a program, a block of memory called an activation record is allocated on top of the call stack. Once a block of memory has been allocated on the stack, it cannot be easily removed as there can be other blocks of memory that were allocated before it.  Generally, the activation record stores the function's arguments and local variables
 
-## Our Own Examples
-* Splunk Log Examples 
+## Our Own Example
+* Splunk Log Example 
   * RMS Payments API
     * Error Post One-Time Payment - Unavailable Draft Date
   * 
-  * [ProcessFlowAutomation Request BusinessLayer](https://git.rockfin.com/Servicing/process-flow-automation-api/blob/main/ProcessFlowAutomationApi.BusinessLayer/RequestBusinessLayer.cs#L12)
+  * [Servicing Payments API OneTimePaymentsDataLayer](https://git.rockfin.com/myql-servicing/servicing-payments-api/blob/master_v2/Payments.DataLayer/OneTimePaymentsDataLayer.cs#L98-L103)
+  * [Viper API OneTimePaymentsBusinessLayer](https://git.rockfin.com/Servicing/viper/blob/f5e10a5e6f37cee3f741b942c13f0ab6c061db15/Viper.BusinessLayer/OneTimePaymentBusinessLayer.cs#L351-L354)
 
 ## Possible Upgrade/Opportunity
 * Ben.Demystifier
