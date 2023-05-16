@@ -7,9 +7,9 @@
 * Often used to create log files.
 
 ## Helpful Tips and Best Practices
-* You can also print a stack trace at any point in your app code using methods such as Thread. dumpStack() 
-* Can obtain a stack trace from a thread by calling the getStackTrace() method on the Thread instance. 
-   * It returns an array of StackTraceElement, from which details about stack frames of the thread can be found.
+* You can obtain a stack trace from System.Diagnostics if you want to see the stack without an exception. 
+   * System.Diagnostics.StackTrace(true);
+   * 
 * Technically, once a block of memory has been allocated on the stack, it cannot be easily removed as there can be other blocks of memory that were allocated before it. Each time a function is called in a program, a block of memory called an activation record is allocated on top of the call stack. Generally, the activation record stores the function's arguments and local variables
 * chain of exceptions
    * applications will catch an Exception and re-throw it as the cause of another Exception.
