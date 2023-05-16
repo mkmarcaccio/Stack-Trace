@@ -1,0 +1,45 @@
+
+// Example Showing Stack Trace Order of Methods and Diagnostic Call for Non Exceptions
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		StackTraceTest();
+	}
+	
+	public static void StackTraceTest()
+	{
+		try
+		{
+			ActionMethod();
+		}
+		catch (Exception ex)
+		{
+			throw;
+		}
+	}
+	
+	static void ActionMethod()
+	{
+		try
+		{
+			DeepActionMethod();
+		}
+		catch (Exception ex)
+		{
+			throw;
+		}
+	}
+	
+	static void DeepActionMethod()
+	{
+		Console.WriteLine("Testing works!");
+		// throw new Exception("Uh Oh Mike, What did you do!");
+		// System.Diagnostics.StackTrace t = new System.Diagnostics.StackTrace(true);
+		// Console.WriteLine(t);
+	}
+}
+
