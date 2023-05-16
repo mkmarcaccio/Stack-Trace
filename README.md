@@ -1,11 +1,10 @@
 # Stack-Trace
 
-## What is Stace Trace?
-* Also called a BACKTRACE or STACK TRACE, consists of a collection of stack records, which store an application's movement during its execution. 
-* The stack trace includes information about program subroutines and can be used to debug or troubleshoot and is often used to create log files.
-* Generates when your app crashes because of an error or an exception.
-*  List of the method calls that the application was in the middle of when an Exception was thrown.
-*  help software engineers figure out where a problem lies or how various subroutines work together during execution.
+## What is Stack Trace?
+* Also called a BACKTRACE, consists of a collection of stacked records, which store an application's movement of functions/method calls during its execution. 
+* The stack trace includes information about program subroutines and can be used to debug or troubleshoot.
+* Generates when your application crashes because of an error or an exception.
+* Often used to create log files.
 
 ## Helpful Tips and Best Practices
 * You can also print a stack trace at any point in your app code using methods such as Thread. dumpStack() 
