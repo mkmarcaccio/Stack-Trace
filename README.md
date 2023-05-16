@@ -9,6 +9,7 @@
 ## Helpful Tips, Best Practices, & Knowledge 
 * Read stacks as Most Recent to Oldest
   * The deepest exception happens in yourfunction/method calls and then a chain of exceptions is generated/thrown until the surface exception, which is the last one that happened in time. But when reading the stack we see it in the first place.
+  * ![](images/StackTrace_Order.PNG)
 * Fun Analogy: Stack of Blocks
   * Think of Stack Trace as if you are building a tower out of blocks.
 * Main goal is to locate the Root Cause of your exception.   
