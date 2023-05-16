@@ -22,6 +22,7 @@
 *  Another tricky but important thing is inside each "Cause by" block, the first line was the deepest layer and happen first place for this block. 
 
 
-## Stace Trace Examples
-* Code Example - [ProcessFlowAutomation Request BusinessLayer](https://git.rockfin.com/Servicing/process-flow-automation-api/blob/main/ProcessFlowAutomationApi.BusinessLayer/RequestBusinessLayer.cs#L12)
-
+## Stace Trace Small Demo & Examples
+* Demo on Fiddle - [Dotnetfiddle](https://dotnetfiddle.net/)
+* Splunk Log Examples 
+  * [ProcessFlowAutomation Request BusinessLayer](https://git.rockfin.com/Servicing/process-flow-automation-api/blob/main/ProcessFlowAutomationApi.BusinessLayer/RequestBusinessLayer.cs#L12)
