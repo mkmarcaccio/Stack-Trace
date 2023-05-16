@@ -36,3 +36,5 @@
 ## Possible Upgrade/Opportunity
 * Ben.Demystifier
   * [Nick Chapsas Video](https://www.youtube.com/watch?v=JcnucGEaxLo&t=1s)
+  * Makes Stack Traces easier to read & shows more things we are used to seeing in code!
+  * ![](images/Ben.Demystifier_Example.PNG)
