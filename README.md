@@ -25,6 +25,9 @@
 
 ## Our Own Examples
 * Splunk Log Examples 
+  * RMS Payments API
+    * Error Post One-Time Payment - Unavailable Draft Date
+  * 
   * [ProcessFlowAutomation Request BusinessLayer](https://git.rockfin.com/Servicing/process-flow-automation-api/blob/main/ProcessFlowAutomationApi.BusinessLayer/RequestBusinessLayer.cs#L12)
 
 ## Possible Upgrade/Opportunity
