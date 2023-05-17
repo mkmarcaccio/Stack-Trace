@@ -3,7 +3,7 @@
 ## What is Stack Trace?
 * Also called a BACKTRACE, consists of a collection of stacked records, which store an application's movement of function/method calls during its execution. 
 * The stack trace includes information about program subroutines or functions that can be used to debug or troubleshoot.
-* Generates when your application crashes because of an error or an exception.
+* Usually generates when your application crashes because of an error or an exception.
 * Often used to create log files.
 
 ## Knowledge & Helpful Tips
